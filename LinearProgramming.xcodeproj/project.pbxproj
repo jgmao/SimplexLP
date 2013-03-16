@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A238C0A416BF2F8C004B9060 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A238C0A316BF2F8C004B9060 /* main.cpp */; };
 		A238C0A616BF2F8C004B9060 /* LinearProgramming.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A238C0A516BF2F8C004B9060 /* LinearProgramming.1 */; };
+		A238C0AE16BF472D004B9060 /* Simplex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A238C0AC16BF472D004B9060 /* Simplex.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		A238C09F16BF2F8C004B9060 /* LinearProgramming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LinearProgramming; sourceTree = BUILT_PRODUCTS_DIR; };
 		A238C0A316BF2F8C004B9060 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A238C0A516BF2F8C004B9060 /* LinearProgramming.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = LinearProgramming.1; sourceTree = "<group>"; };
+		A238C0AC16BF472D004B9060 /* Simplex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = Simplex.cpp; sourceTree = "<group>"; tabWidth = 2; };
+		A238C0AD16BF472D004B9060 /* Simplex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Simplex.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 			children = (
 				A238C0A316BF2F8C004B9060 /* main.cpp */,
 				A238C0A516BF2F8C004B9060 /* LinearProgramming.1 */,
+				A238C0AC16BF472D004B9060 /* Simplex.cpp */,
+				A238C0AD16BF472D004B9060 /* Simplex.h */,
 			);
 			path = LinearProgramming;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A238C0A416BF2F8C004B9060 /* main.cpp in Sources */,
+				A238C0AE16BF472D004B9060 /* Simplex.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +133,7 @@
 		A238C0A716BF2F8C004B9060 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -148,6 +154,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /opt/local/include/eigen3;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -157,7 +164,7 @@
 		A238C0A816BF2F8C004B9060 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -172,6 +179,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /opt/local/include/eigen3;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
